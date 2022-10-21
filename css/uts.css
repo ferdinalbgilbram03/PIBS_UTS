@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: #247485;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+header a span {
+  color: #f3c12f;
+  font-weight: bold;
+}
+
+/* navbar */
+
+nav {
+  float: left; /* Mengisi ke kiri */
+  width: 25%;
+}
+.wrapper-navbar ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.wrapper-navbar ul li {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.wrapper-navbar li a {
+  text-decoration: none;
+  color: #247485;
+}
+
+.wrapper-aside {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/* article */
+.wrapple-article {
+  float: left;
+  width: 50%;
+}
+
+.header-article{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.wrapper-article img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.icons {
+  color: #f3c12f;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+
+.paraf {
+  margin: 18px;
+  margin-top: 20px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.paraf span {
+  font-weight: bold;
+  font-size: large;
+}
+.paraf a {
+  text-decoration: none;
+  color: #247485;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.paraf p {
+  font-size: small;
+  text-align: justify;
+  font-size: small;
+  color: #6B6B6B;
+}
+
+/* aside */
+
+aside {
+  float: left;
+  width: 25%;
+}
+
+img {
+  /* membuat gambar ke tengah */
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+a {
+  font-size: medium;
+  text-decoration: none;
+  color: #247485;
+  font-weight: bold;
+}
+
+p {
+  font-size: small;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  color: #6B6B6B;
+
+}
+
+.subhead {
+  padding: 0 20px;
+}
+
+/* footer */
+.footer {
+  color: #1c2e35;
+  font-weight: bolder;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: #aacbff;
+}
+
+/* tampilan untuk mobile */
+@media screen and (min-width: 100px) {
+  nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+    min-height: 50vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper-navbar {
+    position: relative;
+    width: 100%;
+    height: 60px;
+  }
+
+  .wrapper-navbar ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  .wrapper-navbar ul li {
+    display: flex;
+    padding-top: 0px;
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+  }
+}
+
+/* tampilan untuk tablet */
+@media screen and (min-width: 768px) {
+  nav {
+    width: 25%;
+    float: left;
+    min-height: 100vh;
+  }
+
+  article {
+    width: 75%;
+    float: left;
+  }
+
+  aside {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+/* tampilan untuk desktop */
+@media screen and (min-width: 1024px) {
+  nav {
+    width: 25%;
+  }
+
+  article {
+    width: 50%;
+    padding-right: 35px;
+    min-height: 100vh;
+  }
+
+  aside {
+    width: 25%;
+  }
+}
